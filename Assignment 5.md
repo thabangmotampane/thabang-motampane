@@ -174,7 +174,7 @@ Basic Flow:
 
 USE CASE DIAGRAM
 
-[![Use Case Diagram.](media/c630f57e81c4971494cf43f8d5e1491f.jpeg)](https://github.com/thabangmotampane/thabang-motampane/blob/main/Use%20case%20diagram.Js)
+[![Use Case Diagram.](media/c630f57e81c4971494cf43f8d5e1491f.jpeg)](https://github.com/thabangmotampane/thabang-motampane/blob/main/Use%20case%20diagram.JPG)
 
 TEST CASE DEVELOPMENT
 
