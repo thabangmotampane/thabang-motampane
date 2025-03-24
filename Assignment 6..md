@@ -11,7 +11,7 @@ The aim of this project is to create an online platform where customers can easi
 The end goal of this project is to:
 
 -   Make the process of searching, booking, and paying for boats as seamless as possible for customers.
--   Allow boat owners to easily manage their boat listings, set availability, and monitor bookings.
+-   Allow the owner to easily manage their boat listings, set availability, and monitor bookings.
 -   Design a system that can scale to include different types of boats, services, and locations.
 -   Provide a secure payment system and offer customer/boat owner feedback mechanisms to establish trust.
 
