@@ -15,9 +15,9 @@ The end goal of this project is to:
 -   Design a system that can scale to include different types of boats, services, and locations.
 -   Provide a secure payment system and offer customer/boat owner feedback mechanisms to establish trust.
 
-The team will use Scrum to manage the project, using 2-week sprints, sprint reviews, and retrospectives to track progress and improve the process. Tasks will be completed in short, time-boxed sprints (2 weeks) with regular releases. The product owner will ensure the backlog is regularly updated, prioritized, and refined.
+I will use Scrum to manage the project, using 2-week sprints, sprint reviews, and retrospectives to track progress and improve the process. Tasks will be completed in short, time-boxed sprints (2 weeks) with regular releases. The product owner will ensure the backlog is regularly updated, prioritized, and refined.
 
-Each sprint will consist of daily stand-ups which are 15-minute meetings to discuss progress, obstacles, and upcoming tasks. At the end of each sprint, the team will demonstrate completed work to stakeholders. After each sprint review, the team will reflect on what went well, what can be improved, and how to improve processes.
+Each sprint will consist of daily stand-ups which are 15-minute meetings to discuss progress, obstacles, and upcoming tasks. At the end of each sprint, I will demonstrate completed work to stakeholders. After each sprint review, I will reflect on what went well, what can be improved, and how to improve processes.
 
 The product will be released iteratively, with the first version containing core features such as boat search, listing, and booking functionalities. Further releases will add advanced features like feedback systems, notifications, and admin tools.
 
