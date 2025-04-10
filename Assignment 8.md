@@ -14,7 +14,7 @@ The above state transition diagram highlights the account registration, payment 
 
 2\. Activity Diagram
 
-![Activity Diagram](Activity Diagram.jpg))
+![Activity Diagram]((https://github.com/thabangmotampane/thabang-motampane/blob/cfd617cdda930009934f896e8552617ecbe043a7/Activity%20Diagram.jpg))
 
 Activity diagram documentation:
 
