@@ -4,6 +4,8 @@
 
 **STUDENT NUMBER: 251699544**
 
+**Boat Rental System**
+
 1\. Entities, Attributes, Relationships, Responsibilities and Business Rules.
 
 **Entity:** Customer
