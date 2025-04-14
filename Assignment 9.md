@@ -26,7 +26,7 @@
 
 \+ updateProfile(): void
 
-\+ viewRentals(): List<Rental>
+\+ viewBookings(): List<Booking>
 
 **Entity:** Boat
 
@@ -42,7 +42,7 @@
 
 \- status: string
 
-\- rentalRate: decimal
+\- bookingRate: decimal
 
 **Responsibilities:**
 
@@ -50,7 +50,7 @@
 
 \+ isAvailable(): bool
 
-\+ calculateRentalCost(duration: int): decimal
+\+ calculateBookingCost(duration: int): decimal
 
 **Entity:** Booking
 
@@ -168,149 +168,94 @@
 
 2\. **Class Diagram:** Below is a class diagram for a boat rental system indicating the key relationships between entities written in mermaid.
 
-\`\`\`mermaid
-
+```mermaid
+classDiagram
 class Customer {
 
-\- customerId: int
-
-\- name: string
-
-\- email: string
-
-\- phone: string
-
-\- driverLicenseNumber: string
-
-\+ register(): void
-
-\+ updateProfile(): void
-
-\+ viewRentals(): List<Rental>
-
+- customerId: int
+- name: string
+- email: string
+- phone: string
+- driverLicenseNumber: string
++ register(): void
++ updateProfile(): void
++ viewBookings(): List<Booking>
 }
 
 class Boat {
 
-\- boatId: int
-
-\- name: string
-
-\- type: string
-
-\- capacity: int
-
-\- status: string
-
-\- rentalRate: decimal
-
-\+ updateStatus(newStatus: string): void
-
-\+ isAvailable(): bool
-
-\+ calculateRentalCost(duration: int): decimal
-
+- boatId: int
+- name: string
+- type: string
+- capacity: int
+- status: string
+- bookingRate: decimal
++ updateStatus(newStatus: string): void
++ isAvailable(): bool
++ calculateBookingCost(duration: int): decimal
 }
 
 class Booking {
 
-\- bookingId: int
-
-\- bookingDate: datetime
-
-\- returnDate: datetime
-
-\- actualReturnDate: datetime
-
-\- status: string
-
-\- totalCost: decimal
-
-\+ calculateTotalCost(): decimal
-
-\+ updateStatus(newStatus: string): void
-
-\+ completeBooking(actualReturnDate: datetime): void
-
+- bookingId: int
+- bookingDate: datetime
+- returnDate: datetime
+- actualReturnDate: datetime
+- status: string
+- totalCost: decimal
++ calculateTotalCost(): decimal
++ updateStatus(newStatus: string): void
++ completeBooking(actualReturnDate: datetime): void
 }
 
 class Payment {
 
-\- paymentId: int
-
-\- paymentDate: datetime
-
-\- amount: decimal
-
-\- paymentMethod: string
-
-\+ processPayment(): bool
-
-\+ generateReceipt(): string
-
+- paymentId: int
+- paymentDate: datetime
+- amount: decimal
+- paymentMethod: string
++ processPayment(): bool
++ generateReceipt(): string
 }
 
 class Account {
 
-\- accountId: int
-
-\- userName: string
-
-\- password: string
-
-\+ createAccount(): string
-
-\+ manageAccount(): string
-
+- accountId: int
+- userName: string
+- password: string
++ createAccount(): string
++ manageAccount(): string
 }
 
 class Sales Assistant {
 
-\- saleAssistantId: int
-
-\- name: string
-
-\- surname: string
-
-\- email: string
-
-\- status: string
-
-\+ assignBooking(booking: Booking): void
-
-\+ viewAssignedBooking(): List<Booking>
-
+- saleAssistantId: int
+- name: string
+- surname: string
+- email: string
+- status: string
++ assignBooking(booking: Booking): void
++ viewAssignedBooking(): List<Booking>
 }
 
 class Service Assistant {
 
-\- serviceAssistantId: int
-
-\- name: string
-
-\- surname: string
-
-\- email: string
-
-\+ assignBoat(boat: Boat): void
-
-\+ viewAssignedBoats(): List<Boat>
-
+- serviceAssistantId: int
+- name: string
+- surname: string
+- email: string
++ assignBoat(boat: Boat): void
++ viewAssignedBoats(): List<Boat>
 }
 
-Customer "1" -- "1\*" Account : creates
-
+Customer "1" -- "1*" Account : creates
 Customer "1" -- "0..1" Booking : has
-
-Service Assistant "1" -- "0..\*" Boat : assigned
-
-Boat "1" -- "0..\*" Booking : associatedWith
-
+Service Assistant "1" -- "0..*" Boat : assigned
+Boat "1" -- "0..*" Booking : associatedWith
 Booking "1" -- "1" Payment : has
+Sales Assistant "1" -- "0..*" Booking : assigned
 
-Sales Assistant "1" -- "0..\*" Booking : assigned
-
-\`\`\`
+```
 
 3\. **Reflection:**
 
